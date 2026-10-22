@@ -1,24 +1,24 @@
 # tp5_shopcheck
 
-## Installation
+## installation
 
-Prérequis : [uv](https://docs.astral.sh/uv/).
+prérequis : [uv](https://docs.astral.sh/uv/).
 
 ```bash
 cd tp5_shopcheck
 uv sync
 ```
 
-## Lancement
+## lancement
 
 ```bash
 uv run python -m shopcheck.main
 ```
 
-Options :
+options :
 
-| Option | Rôle |
+| option | rôle |
 | --- | --- |
-| `-c`, `--config` | Fichier de configuration (défaut : `config.yaml`) |
-| `-i`, `--input` | Remplace le fichier de commandes indiqué dans la configuration |
-| `-k`, `--catalogue` | Remplace le catalogue indiqué dans la configuration |
+| `-c`, `--config` | fichier de configuration (défaut : `config.yaml`) |
+| `-i`, `--input` | remplace le fichier de commandes indiqué dans la configuration |
+| `-k`, `--catalogue` | remplace le catalogue indiqué dans la configuration |
