@@ -1,6 +1,4 @@
-# shopcheck
-
-Outil CLI qui lit et valide les commandes du jour de TechShop (CSV), le catalogue fournisseur (JSON) et la configuration (YAML), puis produit `out/rapport.json` et `out/expeditions.csv`.
+# tp5_shopcheck
 
 ## Installation
 
@@ -11,11 +9,7 @@ cd tp5_shopcheck
 uv sync
 ```
 
-`uv sync` crée l'environnement virtuel `.venv` et installe les dépendances (`pydantic`, `pyyaml`) à partir de `uv.lock`.
-
 ## Lancement
-
-Exécution par défaut (utilise `config.yaml`) :
 
 ```bash
 uv run python -m shopcheck.main
@@ -29,7 +23,7 @@ Options :
 | `-i`, `--input` | Remplace le fichier de commandes indiqué dans la configuration |
 | `-k`, `--catalogue` | Remplace le catalogue indiqué dans la configuration |
 
-Exemples avec les fichiers invalides :
+Exemples :
 
 ```bash
 uv run python -m shopcheck.main -c config_invalide.yaml

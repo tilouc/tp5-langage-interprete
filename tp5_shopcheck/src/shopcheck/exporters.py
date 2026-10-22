@@ -30,13 +30,13 @@ def calculer_rapport(commandes: list[Commande], catalogue: Catalogue, config: Co
 
 
 def exporter_rapport_json(rapport: dict, chemin: str) -> None:
-    os.makedirs(os.path.dirname(chemin) or ".", exist_ok=True)
+    os.makedirs(os.path.dirname(chemin), exist_ok=True)
     with open(chemin, "w", encoding="utf-8") as f:
         json.dump(rapport, f, indent=2, ensure_ascii=False)
 
 
 def exporter_expeditions_csv(commandes: list[Commande], chemin: str) -> None:
-    os.makedirs(os.path.dirname(chemin) or ".", exist_ok=True)
+    os.makedirs(os.path.dirname(chemin), exist_ok=True)
     colonnes = ["id_commande", "client_email", "ref", "quantite"]
     with open(chemin, "w", newline="", encoding="utf-8-sig") as f:
         writer = csv.DictWriter(f, fieldnames=colonnes)

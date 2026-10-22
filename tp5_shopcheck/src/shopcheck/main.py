@@ -6,7 +6,7 @@ from shopcheck.loaders import charger_catalogue, charger_config, lire_commandes,
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(prog="shopcheck")
+    parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--config", type=str, default="config.yaml")
     parser.add_argument("-i", "--input", type=str)
     parser.add_argument("-k", "--catalogue", type=str)
