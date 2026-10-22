@@ -1,0 +1,5 @@
+commandes: data/commandes.csv
+catalogue: data/catalogue.json
+sortie: out
+tva: 0.20
+seuil_alerte_stock: 5
